@@ -20,5 +20,5 @@ Copy the _includes directory to your Jekyll dir.
 
  `cp -r /var/lib/gems/minima/_includes .`
 
-Open ./_includes/footer.html and locate the repeating title.
+Open ./_includes/footer.html and locate the repeating title. 
 
