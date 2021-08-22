@@ -33,7 +33,7 @@ dash:
 
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: jekyll-dash
 plugins:
   - jekyll-sitemap
   - liquid-md5
