@@ -2,8 +2,7 @@
 -------------------------------------------------
 
 
-![instruction][1]
-[1]: https://i.stack.imgur.com/mbLTw.png
+![instruction](https://i.stack.imgur.com/mbLTw.png)
 
 
 # Troubleshooting
