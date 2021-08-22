@@ -22,3 +22,9 @@ Copy the _includes directory to your Jekyll dir.
 
 Open ./_includes/footer.html and locate the repeating title. 
 
+
+## Production build
+
+```
+JEKYLL_ENV=production bundle exec jekyll build --destination site
+```
