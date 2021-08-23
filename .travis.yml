@@ -1,4 +1,7 @@
 language: ruby
+rvm:
+  - 2.2
+  - jruby
 cache: bundler
 branches:
   only:
@@ -6,6 +9,7 @@ branches:
 before_install:
 - gem install bundler -v 2.0.1
 script:
+  - chmod +x ./script/cibuild
   - JEKYLL_ENV=production bundle exec jekyll build --destination site
 deploy:
   repo: rajendraarora/blogs.github.io
@@ -14,7 +18,7 @@ deploy:
   target-branch: master
   email: deploy@travis-ci.org
   name: Deployment Bot
-  skip-cleanup: true
+  skip-cleanup: false
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
