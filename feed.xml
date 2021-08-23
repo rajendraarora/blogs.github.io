@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blogs.rajendraarora.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blogs.rajendraarora.com/" rel="alternate" type="text/html" /><updated>2021-08-23T10:44:00+05:30</updated><id>https://blogs.rajendraarora.com/feed.xml</id><title type="html">Research blogs</title><subtitle>💻 Developer by day, 🎮 gamer by night | Software Developer in @Taboola | ☕ sometimes coffee lover  | A good player in call of duty | 📷 sometimes love photography</subtitle><author><name>Raj Arora</name></author><entry><title type="html">How to deploy github repositories with Travis CI?</title><link href="https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci.html" rel="alternate" type="text/html" title="How to deploy github repositories with Travis CI?" /><published>2021-08-23T00:00:00+05:30</published><updated>2021-08-23T00:00:00+05:30</updated><id>https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci</id><content type="html" xml:base="https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci.html">&lt;p&gt;Github is a nice solution which can be integrated with Travis CI to host website, building solutions/container etc. I am using the same solution to host my blogs using jekyll to host static file via github pages.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blogs.rajendraarora.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blogs.rajendraarora.com/" rel="alternate" type="text/html" /><updated>2021-08-23T19:31:40+05:30</updated><id>https://blogs.rajendraarora.com/feed.xml</id><title type="html">Research blogs</title><subtitle>💻 Developer by day, 🎮 gamer by night | Software Developer in @Taboola | ☕ sometimes coffee lover  | A good player in call of duty | 📷 sometimes love photography</subtitle><author><name>Raj Arora</name></author><entry><title type="html">How to deploy github repositories with Travis CI?</title><link href="https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci.html" rel="alternate" type="text/html" title="How to deploy github repositories with Travis CI?" /><published>2021-08-23T00:00:00+05:30</published><updated>2021-08-23T00:00:00+05:30</updated><id>https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci</id><content type="html" xml:base="https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci.html">&lt;p&gt;Github is a nice solution which can be integrated with Travis CI to host website, building solutions/container etc. I am using the same solution to host my blogs using jekyll to host static file via github pages.&lt;/p&gt;
 
 &lt;p&gt;I assume, you have github public repo. I will be taking my github blog example to deploy my blog repository with Travis CI.&lt;/p&gt;
 
@@ -87,7 +87,118 @@ s.setAttribute(&apos;data-timestamp&apos;, +new Date());
 &lt;/script&gt;
 
 &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-&lt;script id=&quot;dsq-count-scr&quot; src=&quot;//https-blogs-rajendraarora-com-1.disqus.com/count.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;</content><author><name>Raj Arora</name></author><category term="Travis" /><category term="Github" /><category term="repositories" /><category term="Travis-ci" /><summary type="html">Github is a nice solution which can be integrated with Travis CI to host website, building solutions/container etc. I am using the same solution to host my blogs using jekyll to host static file via github pages.</summary></entry><entry><title type="html">I love robots</title><link href="https://blogs.rajendraarora.com/artificial-intelligence/2018/03/11/I-love-robots.html" rel="alternate" type="text/html" title="I love robots" /><published>2018-03-11T00:00:00+05:30</published><updated>2018-03-11T00:00:00+05:30</updated><id>https://blogs.rajendraarora.com/artificial-intelligence/2018/03/11/I-love-robots</id><content type="html" xml:base="https://blogs.rajendraarora.com/artificial-intelligence/2018/03/11/I-love-robots.html">&lt;p&gt;Meet my virtual assistant &lt;a href=&quot;https://kumar.rajendraarora.com&quot; target=&quot;_blank&quot;&gt;Kumar&lt;/a&gt; linked with multiple APIs and follow the skills you give from the SUSI architectures.&lt;/p&gt;
+&lt;script id=&quot;dsq-count-scr&quot; src=&quot;//https-blogs-rajendraarora-com-1.disqus.com/count.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;</content><author><name>Raj Arora</name></author><category term="travis" /><category term="github" /><category term="repositories" /><category term="travis-ci" /><summary type="html">Github is a nice solution which can be integrated with Travis CI to host website, building solutions/container etc. I am using the same solution to host my blogs using jekyll to host static file via github pages.</summary></entry><entry><title type="html">Deno</title><link href="https://blogs.rajendraarora.com/deno/2021/08/23/deno.html" rel="alternate" type="text/html" title="Deno" /><published>2021-08-23T00:00:00+05:30</published><updated>2021-08-23T00:00:00+05:30</updated><id>https://blogs.rajendraarora.com/deno/2021/08/23/deno</id><content type="html" xml:base="https://blogs.rajendraarora.com/deno/2021/08/23/deno.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p algin=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/deno_icon.png&quot; data-canonical-src=&quot;/assets/img/deno_icon.png&quot; style=&quot;height: 50px;width: 50px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-deno&quot;&gt;What is Deno?&lt;/h1&gt;
+
+&lt;p&gt;As per the &lt;a href=&quot;https://github.com/denoland/deno&quot;&gt;definition&lt;/a&gt;, deno is a simple, modern and secure runtime for Javascript and Typescript which is built on V8, Rust and &lt;a href=&quot;https://tokio.rs/&quot;&gt;Tokio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It has recently been announced the &lt;a href=&quot;https://deno.com/blog/deno-on-mdn&quot;&gt;compatibility on MDN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;feature&quot;&gt;Feature&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Supports Typescript&lt;/li&gt;
+  &lt;li&gt;Ships a single executable&lt;/li&gt;
+  &lt;li&gt;Has built-in utilities like a code formatter (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deno fmt&lt;/code&gt;), a linter (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deno lint&lt;/code&gt;), and a test runner (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deno test&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;Can bundle scripts into a single JavaScript file.&lt;/li&gt;
+  &lt;li&gt;Set of reviewed standard modules that are guaranteed to work with &lt;a href=&quot;https://deno.land/std&quot;&gt;Deno&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;how-to-download-deno&quot;&gt;How to download Deno?&lt;/h1&gt;
+
+&lt;p&gt;You can download from the &lt;a href=&quot;https://deno.land/&quot;&gt;official website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;hello-world-with-deno&quot;&gt;Hello World with Deno!&lt;/h1&gt;
+
+&lt;p&gt;Deno runs on Typescript, no additional config tools like webpack or bundle is required to compile. We can use both Javascript or Typescript with Deno.&lt;/p&gt;
+
+&lt;p&gt;I will be using Typescript to run a simple program &lt;br /&gt;Command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deno run hello-world.ts&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-typescript&quot; data-lang=&quot;typescript&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/**
+ * Hello-world.ts
+ */&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;`Hello &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;raj&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/*
+Output:
+
+Hello Raj
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s see more good examples with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;import&lt;/code&gt; modules &lt;br /&gt;Command: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deno run import-example.ts&lt;/code&gt;:
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-typescript&quot; data-lang=&quot;typescript&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/**
+ * import modules
+ */&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiply&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;https://x.nest.land/ramda@0.27.0/source/index.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;totalCost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outbound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;inbound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outbound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;inbound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;totalCost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;22.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/**
+Output:
+98.25
+ */&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;comparison-to-nodejs&quot;&gt;Comparison to Node.js&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Deno doesn’t use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm&lt;/code&gt;, it uses URLs or file paths.&lt;/li&gt;
+  &lt;li&gt;Deno doesn’t use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;All async actions in Deno return a promise, thus Deno provides different APIs than node.&lt;/li&gt;
+  &lt;li&gt;Deno requires explicit permission for file, network or environment access which makes it more secure.&lt;/li&gt;
+  &lt;li&gt;Deno dies in uncaught errors.&lt;/li&gt;
+  &lt;li&gt;Deno uses “ES modules” and doesn’t support &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;require()&lt;/code&gt; and third party modules are imported via URLs with above import module example:&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-typescript&quot; data-lang=&quot;typescript&quot;&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multiply&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;https://x.nest.land/ramda@0.27.0/source/index.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;More information can be found in &lt;a href=&quot;https://deno.land/manual&quot;&gt;manual doc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+var disqus_config = function () {
+this.page.url = &apos;https://blogs.rajendraarora.com/deno/2021/08/23/deno.html&apos;;  
+// Replace PAGE_URL with your page&apos;s canonical URL variable
+this.page.identifier = &apos;deno/2021/08/23/deno.html&apos;;
+};
+(function() {
+var d = document, s = d.createElement(&apos;script&apos;);
+s.src = &apos;https://https-blogs-rajendraarora-com.disqus.com/embed.js&apos;;
+s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&quot;dsq-count-scr&quot; src=&quot;//https-blogs-rajendraarora-com-1.disqus.com/count.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;</content><author><name>Raj Arora</name></author><category term="deno" /><category term="deno" /><category term="typescript" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">I love robots</title><link href="https://blogs.rajendraarora.com/artificial-intelligence/2018/03/11/I-love-robots.html" rel="alternate" type="text/html" title="I love robots" /><published>2018-03-11T00:00:00+05:30</published><updated>2018-03-11T00:00:00+05:30</updated><id>https://blogs.rajendraarora.com/artificial-intelligence/2018/03/11/I-love-robots</id><content type="html" xml:base="https://blogs.rajendraarora.com/artificial-intelligence/2018/03/11/I-love-robots.html">&lt;p&gt;Meet my virtual assistant &lt;a href=&quot;https://kumar.rajendraarora.com&quot; target=&quot;_blank&quot;&gt;Kumar&lt;/a&gt; linked with multiple APIs and follow the skills you give from the SUSI architectures.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://kumar.rajendraarora.com&quot; target=&quot;_blank&quot;&gt;Kumar&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -159,7 +270,7 @@ s.setAttribute(&apos;data-timestamp&apos;, +new Date());
 &lt;br /&gt;&lt;/p&gt;
 &lt;h2 align=&quot;center&quot;&gt;
     Your life is like the stock market: &lt;strong&gt;you will fail or succeed&lt;/strong&gt;, &lt;i&gt;based on the performance you do&lt;/i&gt;
-&lt;/h2&gt;</content><author><name>Raj Arora</name></author><category term="Quotes" /><category term="Quotes" /><summary type="html"></summary></entry><entry><title type="html">How to detect object using tensorflow with real time web cam</title><link href="https://blogs.rajendraarora.com/machine-learning/2018/02/03/how-to-detect-object-using-tensorflow-with-web-cam.html" rel="alternate" type="text/html" title="How to detect object using tensorflow with real time web cam" /><published>2018-02-03T13:33:01+05:30</published><updated>2018-02-03T13:33:01+05:30</updated><id>https://blogs.rajendraarora.com/machine-learning/2018/02/03/how-to-detect-object-using-tensorflow-with-web-cam</id><content type="html" xml:base="https://blogs.rajendraarora.com/machine-learning/2018/02/03/how-to-detect-object-using-tensorflow-with-web-cam.html">&lt;p&gt;How to detect object using tensorflow with real time web cam?&lt;/p&gt;
+&lt;/h2&gt;</content><author><name>Raj Arora</name></author><category term="quotes" /><category term="quotes" /><summary type="html"></summary></entry><entry><title type="html">How to detect object using tensorflow with real time web cam</title><link href="https://blogs.rajendraarora.com/machine-learning/2018/02/03/how-to-detect-object-using-tensorflow-with-web-cam.html" rel="alternate" type="text/html" title="How to detect object using tensorflow with real time web cam" /><published>2018-02-03T13:33:01+05:30</published><updated>2018-02-03T13:33:01+05:30</updated><id>https://blogs.rajendraarora.com/machine-learning/2018/02/03/how-to-detect-object-using-tensorflow-with-web-cam</id><content type="html" xml:base="https://blogs.rajendraarora.com/machine-learning/2018/02/03/how-to-detect-object-using-tensorflow-with-web-cam.html">&lt;p&gt;How to detect object using tensorflow with real time web cam?&lt;/p&gt;
 
 &lt;p algin=&quot;center&quot;&gt;
     &lt;img src=&quot;https://blogs.rajendraarora.com/assets/img/tensorflow.png&quot; data-canonical-src=&quot;https://blogs.rajendraarora.com/assets/img/tensorflow.png&quot; width=&quot;700&quot; height=&quot;300&quot; /&gt;
@@ -347,4 +458,4 @@ s.setAttribute(&apos;data-timestamp&apos;, +new Date());
 &lt;/script&gt;
 
 &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-&lt;script id=&quot;dsq-count-scr&quot; src=&quot;//https-blogs-rajendraarora-com-1.disqus.com/count.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;</content><author><name>Raj Arora</name></author><category term="machine-learning" /><category term="Tensorflow" /><category term="object-detection" /><category term="OpenCV" /><summary type="html">How to detect object using tensorflow with real time web cam?</summary></entry></feed>
+&lt;script id=&quot;dsq-count-scr&quot; src=&quot;//https-blogs-rajendraarora-com-1.disqus.com/count.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;</content><author><name>Raj Arora</name></author><category term="machine-learning" /><category term="tensorflow" /><category term="object-detection" /><category term="open-cv" /><summary type="html">How to detect object using tensorflow with real time web cam?</summary></entry></feed>
