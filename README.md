@@ -26,5 +26,5 @@ Open ./_includes/footer.html and locate the repeating title.
 ## Production build
 
 ```
-JEKYLL_ENV=production bundle exec jekyll build --destination site
+JEKYLL_ENV=production bundle exec jekyll build --destination ../site
 ```
