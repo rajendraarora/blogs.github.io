@@ -12,7 +12,7 @@ script:
   - chmod +x ./script/cibuild
   - JEKYLL_ENV=production bundle exec jekyll build --destination site
 deploy:
-  repo: rajendraarora/blogs.github.io
+  repo: rajendraarora16/blogs.github.io
   provider: pages
   local-dir: ./site
   target-branch: master
