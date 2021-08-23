@@ -36,13 +36,112 @@
  <title>Research blogs</title>
  <link href="https://blogs.rajendraarora.com/atom.xml" rel="self"/>
  <link href="https://blogs.rajendraarora.com/"/>
- <updated>2021-08-23T08:41:27+05:30</updated>
+ <updated>2021-08-23T10:44:00+05:30</updated>
  <id>https://blogs.rajendraarora.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to deploy github repositories with Travis CI?</title>
+   <link href="https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci.html"/>
+   <updated>2021-08-23T00:00:00+05:30</updated>
+   <id>https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci</id>
+   <content type="html">&lt;p&gt;Github is a nice solution which can be integrated with Travis CI to host website, building solutions/container etc. I am using the same solution to host my blogs using jekyll to host static file via github pages.&lt;/p&gt;
+
+&lt;p&gt;I assume, you have github public repo. I will be taking my github blog example to deploy my blog repository with Travis CI.&lt;/p&gt;
+
+&lt;p&gt;So, let’s begin with the following steps:&lt;/p&gt;
+
+&lt;h1 id=&quot;1-add-travisyml-file-in-your-github-repo&quot;&gt;1. Add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file in your github repo&lt;/h1&gt;
+
+&lt;p&gt;We need to add travis build configuration configuration to generate the build, so add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; in your root directory. Below I am adding with my configuration:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yml&quot; data-lang=&quot;yml&quot;&gt;&lt;span class=&quot;na&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ruby&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bundler&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;only&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;main&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;before_install&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;gem install bundler -v 2.0.1&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;chmod +x ./script/cibuild&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;JEKYLL_ENV=production bundle exec jekyll build --destination site&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;repo&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rajendraarora/blogs.github.io&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;pages&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;local-dir&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./site&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;target-branch&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;master&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;deploy@travis-ci.org&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Deployment Bot&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;skip-cleanup&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt; 
+  &lt;span class=&quot;na&quot;&gt;github-token&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$GITHUB_TOKEN&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;keep-history&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;master&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;2-get-your-github-token&quot;&gt;2. Get your Github Token&lt;/h1&gt;
+
+&lt;p&gt;. Go to this &lt;a href=&quot;https://github.com/settings/tokens/new&quot;&gt;page&lt;/a&gt; and generate your token and keep it safe.&lt;/p&gt;
+
+&lt;p&gt;. Add your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GITHUB_TOKEN&lt;/code&gt; environment below via go to setting options:&lt;/p&gt;
+
+&lt;p algin=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/token-setting-1.png&quot; data-canonical-src=&quot;/assets/img/token-setting-1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;. Add your token below:&lt;/p&gt;
+&lt;p algin=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/token-setting-2.png&quot; data-canonical-src=&quot;/assets/img/token-setting-2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&quot;3-trigger-your-build&quot;&gt;3. Trigger your Build&lt;/h1&gt;
+
+&lt;p&gt;. Go to trigger setting options&lt;/p&gt;
+&lt;p algin=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/trigger-setting-1.png&quot; data-canonical-src=&quot;/assets/img/trigger-setting-1.png&quot; s=&quot;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;. Select trigger button&lt;/p&gt;
+&lt;p algin=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/trigger-setting-2.png&quot; data-canonical-src=&quot;/assets/img/trigger-setting-2.png&quot; height=&quot;500&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;That’s it.. yay!&lt;/p&gt;
+
+&lt;h1 id=&quot;4-publish-your-github-pages&quot;&gt;4. Publish your github pages&lt;/h1&gt;
+
+&lt;p&gt;. Go to github pages tab and publish it!&lt;/p&gt;
+&lt;p algin=&quot;center&quot;&gt;
+    &lt;img src=&quot;/assets/img/github-page.png&quot; data-canonical-src=&quot;/assets/img/github-page.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+Feel free to write your comments for any issues or reach out to me directly at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;contact[dot]rajendraarora[at]gmail.com&lt;/code&gt;.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+var disqus_config = function () {
+this.page.url = &apos;https://blogs.rajendraarora.com/travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci.html&apos;;  
+// Replace PAGE_URL with your page&apos;s canonical URL variable
+this.page.identifier = &apos;travis/2021/08/23/how-to-deploy-github-repo-with-travis-ci.html&apos;;
+};
+(function() {
+var d = document, s = d.createElement(&apos;script&apos;);
+s.src = &apos;https://https-blogs-rajendraarora-com.disqus.com/embed.js&apos;;
+s.setAttribute(&apos;data-timestamp&apos;, +new Date());
+(d.head || d.body).appendChild(s);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;https://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;script id=&quot;dsq-count-scr&quot; src=&quot;//https-blogs-rajendraarora-com-1.disqus.com/count.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>I love robots</title>
