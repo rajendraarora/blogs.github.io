@@ -36,7 +36,7 @@
  <title>Research blogs</title>
  <link href="https://blogs.rajendraarora.com/atom.xml" rel="self"/>
  <link href="https://blogs.rajendraarora.com/"/>
- <updated>2022-01-08T12:53:49+07:00</updated>
+ <updated>2022-01-08T13:17:48+07:00</updated>
  <id>https://blogs.rajendraarora.com</id>
  <author>
    <name></name>
@@ -252,6 +252,15 @@ In case, you want to see the complete program so here it is:&lt;/p&gt;
 
 	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;time-complexity&quot;&gt;Time complexity&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Worst Time Complexity : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;O(n^2)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Worst case can happen when array is already sorted&lt;/li&gt;
+  &lt;li&gt;Best time complexity : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;O(nlogn)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Average Time Complexity : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;O(nlogn)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Your feedback is appreciated, please feel free to reach out to me on @rajendraarora16 for any suggestions. 
