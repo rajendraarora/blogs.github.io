@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Research blogs" />
 <script type="application/ld+json">
-{"@type":"WebPage","description":"💻 Developer by day, 🎮 gamer by night Software Developer in @Taboola ☕ sometimes coffee lover A good player in call of duty 📷 sometimes love photography","headline":"Research blogs","url":"https://blogs.rajendraarora.com/atom.xml","author":{"@type":"Person","name":"Raj Arora"},"@context":"https://schema.org"}</script>
+{"@type":"WebPage","author":{"@type":"Person","name":"Raj Arora"},"description":"💻 Developer by day, 🎮 gamer by night Software Developer in @Taboola ☕ sometimes coffee lover A good player in call of duty 📷 sometimes love photography","url":"https://blogs.rajendraarora.com/atom.xml","headline":"Research blogs","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" type="image/png" href="/favicon.ico" /><link type="application/atom+xml" rel="alternate" href="https://blogs.rajendraarora.com/feed.xml" title="Research blogs" /></head>
@@ -36,7 +36,7 @@
  <title>Research blogs</title>
  <link href="https://blogs.rajendraarora.com/atom.xml" rel="self"/>
  <link href="https://blogs.rajendraarora.com/"/>
- <updated>2022-01-16T11:50:32+07:00</updated>
+ <updated>2022-01-16T12:08:55+07:00</updated>
  <id>https://blogs.rajendraarora.com</id>
  <author>
    <name></name>
