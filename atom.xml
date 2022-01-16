@@ -36,7 +36,7 @@
  <title>Research blogs</title>
  <link href="https://blogs.rajendraarora.com/atom.xml" rel="self"/>
  <link href="https://blogs.rajendraarora.com/"/>
- <updated>2022-01-16T12:46:29+07:00</updated>
+ <updated>2022-01-16T13:14:42+07:00</updated>
  <id>https://blogs.rajendraarora.com</id>
  <author>
    <name></name>
@@ -268,7 +268,19 @@ Now, if you try to add &lt;code class=&quot;language-plaintext highlighter-rouge
 &lt;span class=&quot;c&quot;&gt;// https://yandex.com is up!&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;// https://github.com is up!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Hope, my contribution will help you to understand this topic. Please feel free to reach out to me on twitter &lt;a href=&quot;https://twitter.com/rajendraarora16&quot;&gt;@rajendraarora16&lt;/a&gt; for any queries. 😉&lt;/p&gt;
+&lt;h1 id=&quot;some-advantages-of-goroutine-vs-threads&quot;&gt;Some advantages of Goroutine vs Threads&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We can run more Goroutines on a typical systems than threads.&lt;/li&gt;
+  &lt;li&gt;Goroutines have a faster startup time than threads.&lt;/li&gt;
+  &lt;li&gt;We can write massively concurrent servers without having to resort to evented programming.&lt;/li&gt;
+  &lt;li&gt;Goroutines are built-in primitives to communicate safely between themselves or channels.&lt;/li&gt;
+  &lt;li&gt;On Java we can run 1000’s or tens of 1000’s threads but in Go we can run hundreds of thousands or millions of Goroutines.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hope my contribution will help you to understand this topic. Please feel free to reach out to me on twitter &lt;a href=&quot;https://twitter.com/rajendraarora16&quot;&gt;@rajendraarora16&lt;/a&gt; for any queries. 😉&lt;/p&gt;
 </content>
  </entry>
  
