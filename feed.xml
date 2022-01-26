@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blogs.rajendraarora.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blogs.rajendraarora.com/" rel="alternate" type="text/html" /><updated>2022-01-26T13:42:51+07:00</updated><id>https://blogs.rajendraarora.com/feed.xml</id><title type="html">Research blogs</title><subtitle>💻 Developer by day, 🎮 gamer by night | Software Engineer in @Taboola | ☕ sometimes coffee lover  | A good player in call of duty | 📷 sometimes love photography</subtitle><author><name>Raj Arora</name></author><entry><title type="html">Channel in Golang</title><link href="https://blogs.rajendraarora.com/channel/2022/01/23/channel.html" rel="alternate" type="text/html" title="Channel in Golang" /><published>2022-01-23T00:00:00+07:00</published><updated>2022-01-23T00:00:00+07:00</updated><id>https://blogs.rajendraarora.com/channel/2022/01/23/channel</id><content type="html" xml:base="https://blogs.rajendraarora.com/channel/2022/01/23/channel.html">&lt;h1 id=&quot;channel&quot;&gt;Channel&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blogs.rajendraarora.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blogs.rajendraarora.com/" rel="alternate" type="text/html" /><updated>2022-01-26T19:12:36+07:00</updated><id>https://blogs.rajendraarora.com/feed.xml</id><title type="html">Research blogs</title><subtitle>💻 Developer by day, 🎮 gamer by night | Software Engineer in @Taboola | ☕ sometimes coffee lover  | A good player in call of duty | 📷 sometimes love photography</subtitle><author><name>Raj Arora</name></author><entry><title type="html">Channel in Golang</title><link href="https://blogs.rajendraarora.com/channel/2022/01/23/channel.html" rel="alternate" type="text/html" title="Channel in Golang" /><published>2022-01-23T00:00:00+07:00</published><updated>2022-01-23T00:00:00+07:00</updated><id>https://blogs.rajendraarora.com/channel/2022/01/23/channel</id><content type="html" xml:base="https://blogs.rajendraarora.com/channel/2022/01/23/channel.html">&lt;h1 id=&quot;channel&quot;&gt;Channel&lt;/h1&gt;
 
 &lt;p&gt;A channel is a communication technique which allows a Goroutine to communicate with another Goroutine.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -160,6 +160,14 @@ but there is no receiver of this channel.&lt;/p&gt;
 
 &lt;p&gt;So we might see some out error:
 fatal error: all goroutines are asleep - deadlock!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;To avoid this error, we can specify the buffer size:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;make&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;chan&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;We won’t see error here anymore after specifying the buffer size.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
