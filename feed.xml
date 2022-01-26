@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blogs.rajendraarora.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blogs.rajendraarora.com/" rel="alternate" type="text/html" /><updated>2022-01-24T14:38:27+07:00</updated><id>https://blogs.rajendraarora.com/feed.xml</id><title type="html">Research blogs</title><subtitle>💻 Developer by day, 🎮 gamer by night | Software Engineer in @Taboola | ☕ sometimes coffee lover  | A good player in call of duty | 📷 sometimes love photography</subtitle><author><name>Raj Arora</name></author><entry><title type="html">Channel in Golang</title><link href="https://blogs.rajendraarora.com/channel/2022/01/23/channel.html" rel="alternate" type="text/html" title="Channel in Golang" /><published>2022-01-23T00:00:00+07:00</published><updated>2022-01-23T00:00:00+07:00</updated><id>https://blogs.rajendraarora.com/channel/2022/01/23/channel</id><content type="html" xml:base="https://blogs.rajendraarora.com/channel/2022/01/23/channel.html">&lt;h1 id=&quot;channel&quot;&gt;Channel&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blogs.rajendraarora.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blogs.rajendraarora.com/" rel="alternate" type="text/html" /><updated>2022-01-26T13:42:51+07:00</updated><id>https://blogs.rajendraarora.com/feed.xml</id><title type="html">Research blogs</title><subtitle>💻 Developer by day, 🎮 gamer by night | Software Engineer in @Taboola | ☕ sometimes coffee lover  | A good player in call of duty | 📷 sometimes love photography</subtitle><author><name>Raj Arora</name></author><entry><title type="html">Channel in Golang</title><link href="https://blogs.rajendraarora.com/channel/2022/01/23/channel.html" rel="alternate" type="text/html" title="Channel in Golang" /><published>2022-01-23T00:00:00+07:00</published><updated>2022-01-23T00:00:00+07:00</updated><id>https://blogs.rajendraarora.com/channel/2022/01/23/channel</id><content type="html" xml:base="https://blogs.rajendraarora.com/channel/2022/01/23/channel.html">&lt;h1 id=&quot;channel&quot;&gt;Channel&lt;/h1&gt;
 
-&lt;p&gt;A channel is a communication technique to which allows to let Goroutine communicate with another Goroutine.
+&lt;p&gt;A channel is a communication technique which allows a Goroutine to communicate with another Goroutine.
 &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/channel.png&quot; alt=&quot;Channel&quot; /&gt;&lt;/p&gt;
@@ -132,6 +132,37 @@
 &lt;span class=&quot;c&quot;&gt;// Hello world&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;// End main function&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s have a quick another look at this simple channel program:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+   &lt;span class=&quot;c&quot;&gt;// syntax for channel&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;make&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;chan&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+   &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;this is my msg 1&quot;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;this is my msg 2&quot;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;this is my msg 3&quot;&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;this is my msg 4&quot;&lt;/span&gt;
+
+   &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here our channel is unbuffered (we didn’t specify any buffer size when make()ing the channel) meaning that they will only accept sends (channel &amp;lt;-) if there is a corresponding receive () ready to receive the sent value. So in this case ‘ch’ is an unbuffered channel and we are attempting to send onto it,
+but there is no receiver of this channel.&lt;/p&gt;
+
+&lt;p&gt;We can fix it by either making the channel buffered or registering a receiver on this channel in another go routine.&lt;/p&gt;
+
+&lt;p&gt;So we might see some out error:
+fatal error: all goroutines are asleep - deadlock!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Close() function&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;We can close the channel with builtin &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;close()&lt;/code&gt; function. This sets the response with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true/false&lt;/code&gt; value to indicate no more value will be send to the channels.&lt;/p&gt;
@@ -140,7 +171,7 @@
 
 &lt;p&gt;Open or close channel value can be checked with the following syntax:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ok&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -163,21 +194,21 @@
 	&lt;span class=&quot;k&quot;&gt;go&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;goRoutineFun&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 	&lt;span class=&quot;c&quot;&gt;/*
-		when the value of &quot;ok&quot;
+		when the value of &quot;status&quot;
 		receives as &quot;true&quot; that means
 		channel is open and it can send and receive data.
 
-		When the value of &quot;ok&quot; receives as &quot;false&quot; means
+		When the value of &quot;status&quot; receives as &quot;false&quot; means
 		channel is closed.
 	*/&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ok&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;
 
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ok&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel is closed:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ok&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel is closed:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 			&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
 		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel is opened with response:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;and status:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ok&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Channel is opened with response:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;and status:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
@@ -203,7 +234,7 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hope my contribution will help you to understand this topic. Please feel free to reach out to me on twitter &lt;a href=&quot;https://twitter.com/rajendraarora16&quot;&gt;@rajendraarora16&lt;/a&gt; for any queries. 😉&lt;/p&gt;</content><author><name>Raj Arora</name></author><category term="Channel" /><category term="channel" /><category term="go" /><summary type="html">Channel</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blogs.rajendraarora.com/assets/img/go.png" /><media:content medium="image" url="https://blogs.rajendraarora.com/assets/img/go.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Goroutines</title><link href="https://blogs.rajendraarora.com/goroutines/2022/01/16/goroutines.html" rel="alternate" type="text/html" title="Goroutines" /><published>2022-01-16T00:00:00+07:00</published><updated>2022-01-16T00:00:00+07:00</updated><id>https://blogs.rajendraarora.com/goroutines/2022/01/16/goroutines</id><content type="html" xml:base="https://blogs.rajendraarora.com/goroutines/2022/01/16/goroutines.html">&lt;h1 id=&quot;goroutines&quot;&gt;Goroutines&lt;/h1&gt;
+&lt;p&gt;Hope my contribution will help you to understand this topic. Please feel free to reach out to me on twitter &lt;a href=&quot;https://twitter.com/rajendraarora16&quot;&gt;@rajendraarora16&lt;/a&gt; for any queries.&lt;/p&gt;</content><author><name>Raj Arora</name></author><category term="Channel" /><category term="channel" /><category term="go" /><summary type="html">Channel</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blogs.rajendraarora.com/assets/img/go.png" /><media:content medium="image" url="https://blogs.rajendraarora.com/assets/img/go.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Goroutines</title><link href="https://blogs.rajendraarora.com/goroutines/2022/01/16/goroutines.html" rel="alternate" type="text/html" title="Goroutines" /><published>2022-01-16T00:00:00+07:00</published><updated>2022-01-16T00:00:00+07:00</updated><id>https://blogs.rajendraarora.com/goroutines/2022/01/16/goroutines</id><content type="html" xml:base="https://blogs.rajendraarora.com/goroutines/2022/01/16/goroutines.html">&lt;h1 id=&quot;goroutines&quot;&gt;Goroutines&lt;/h1&gt;
 
 &lt;p&gt;A Goroutine is a lightweight thread managed by the Go runtime. A Goroutine is a function or method which executes independently and simultaneously in a connection with any other Goroutine present in our program.
 &lt;br /&gt;&lt;/p&gt;
@@ -434,7 +465,7 @@ Now, if you try to add &lt;code class=&quot;language-plaintext highlighter-rouge
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hope my contribution will help you to understand this topic. Please feel free to reach out to me on twitter &lt;a href=&quot;https://twitter.com/rajendraarora16&quot;&gt;@rajendraarora16&lt;/a&gt; for any queries. 😉&lt;/p&gt;</content><author><name>Raj Arora</name></author><category term="Goroutines" /><category term="goroutines" /><category term="go" /><summary type="html">Goroutines</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blogs.rajendraarora.com/assets/img/go.png" /><media:content medium="image" url="https://blogs.rajendraarora.com/assets/img/go.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Quicksort algorithm with Go</title><link href="https://blogs.rajendraarora.com/data-structure/2022/01/08/quick-sort-algorithm-go.html" rel="alternate" type="text/html" title="Quicksort algorithm with Go" /><published>2022-01-08T00:00:00+07:00</published><updated>2022-01-08T00:00:00+07:00</updated><id>https://blogs.rajendraarora.com/data-structure/2022/01/08/quick-sort-algorithm-go</id><content type="html" xml:base="https://blogs.rajendraarora.com/data-structure/2022/01/08/quick-sort-algorithm-go.html">&lt;h1 id=&quot;quicksort-algorithm-with-go&quot;&gt;Quicksort algorithm with Go&lt;/h1&gt;
+&lt;p&gt;Hope my contribution will help you to understand this topic. Please feel free to reach out to me on twitter &lt;a href=&quot;https://twitter.com/rajendraarora16&quot;&gt;@rajendraarora16&lt;/a&gt; for any queries.&lt;/p&gt;</content><author><name>Raj Arora</name></author><category term="Goroutines" /><category term="goroutines" /><category term="go" /><summary type="html">Goroutines</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blogs.rajendraarora.com/assets/img/go.png" /><media:content medium="image" url="https://blogs.rajendraarora.com/assets/img/go.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Quicksort algorithm with Go</title><link href="https://blogs.rajendraarora.com/data-structure/2022/01/08/quick-sort-algorithm-go.html" rel="alternate" type="text/html" title="Quicksort algorithm with Go" /><published>2022-01-08T00:00:00+07:00</published><updated>2022-01-08T00:00:00+07:00</updated><id>https://blogs.rajendraarora.com/data-structure/2022/01/08/quick-sort-algorithm-go</id><content type="html" xml:base="https://blogs.rajendraarora.com/data-structure/2022/01/08/quick-sort-algorithm-go.html">&lt;h1 id=&quot;quicksort-algorithm-with-go&quot;&gt;Quicksort algorithm with Go&lt;/h1&gt;
 
 &lt;p&gt;Quicksort algorithm is a “divide and conquer” algorithm. It takes the “pivot” element from the array and partitioning the other element into sub-arrays.&lt;/p&gt;
 
